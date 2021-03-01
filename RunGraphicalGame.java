@@ -34,7 +34,7 @@ public class RunGraphicalGame extends PApplet {
 		display.drawGrid(game.getGrid()); // display the game
 	}
 
-	public void mouseClicked() {
+	public void mouseReleased() {
 		Location loc = display.gridLocationAt(mouseX, mouseY);
 		int row = loc.getRow();
 		int col = loc.getCol();
